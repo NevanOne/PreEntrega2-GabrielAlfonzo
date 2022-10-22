@@ -52,7 +52,7 @@ body {
     color: white;
   }
   .fotoinicio{ 
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-block: 10%;
@@ -70,14 +70,6 @@ body {
    h4{ 
     color: white;
     text-align: center;
-  }
-  h1 {
-    font-style: italic;
-    color: darkgoldenrod;
-    text-align: center;
-  }
-  .toptext{
-    color: darkgoldenrod;
   }
   .allvalleytxt :visited{
     text-decoration: none;
@@ -148,36 +140,46 @@ body {
     width: 100%;
     font-size: 18px;
 }
-.card button:hover{
-    opacity: 0.7;
+
+.navbar-brand:hover , nav-item:hover , a.nav-link:hover , nav-item:hover{
+  background-color: #bfa252;
 }
 
-.titulo{
-    color: white;
-}
-.descripcion{
-    color: white;
-}
-.price{
-    color: red;
-}
-.producto1{
-    border-style: groove;
-    border-color: red;
-}
-.producto2{
-    border-style: groove;
-    border-color: red;
+
+/* Apartado de animacion de productos */
+
+@-webkit-keyframes bounce{
+  0% {
+transform: scale(1,1) translate(0px, 0px);
 }
 
-@media screen and (max-width: 480px){
-  .body{
-      height: auto;
-      width: auto;
-  }
-  @media screen and (max-height: 480px){
-    .body{
-        height: auto;
-        width: auto;
-    }
+30%{
+transform: scale(1,0.8) translate(0px, 10px); 
+}
+
+75%{
+transform: scale(1,1.1) translate(0px, -25px); 
+}
+
+100% {
+transform: scale(1,1) translate(0px, 0px);
+}
+}
+
+/* Gradiente Texto Top */
+
+.btn-primary {
+-webkit-animation: bounce 1s infinite;
+}
+
+.toptext{
+  -webkit-animation: bounce 0.75s infinite;
+  color: red;
+}
+
+.ub-ubicaciontexto{
+  display: flex;
+  color: red;
+  justify-content: center;
+  -webkit-animation: bounce 1s infinite;
 }
