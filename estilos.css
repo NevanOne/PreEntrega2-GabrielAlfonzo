@@ -2,6 +2,7 @@ body {
    background-image: url(/img/background.jpg);
    background-color: #cccccc;
    background-size: 100%;
+
 }
 /* Agregar color a la barra de navegación */
 .topnav {
@@ -107,9 +108,13 @@ body {
   margin-right: auto;
   padding-top: 90px;
   }
+
+/* Apartado de la pagina de Contacto */
 .bigbox{
-    display: inline;
-    background-color: red;
+  padding-top: 10rem;
+    display: grid;
+    grid-template-rows: 0,5fr;
+    place-content: center;
 }
 .firstname{
     color: white;
@@ -177,6 +182,12 @@ body {
         width: auto;
     }
 }
-.navbar navbar-expand-lg navbar-light bg-light{
-  background-color: yellow;
+.nav-link{
+color: red;
+background-color: red;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 300px 100px;
+  grid-template-rows: 40px 100px;
 }
