@@ -1,6 +1,5 @@
 body {
    background-image: url(/img/background.jpg);
-   background-color: #cccccc;
    background-size: 100%;
 
 }
@@ -181,13 +180,4 @@ body {
         height: auto;
         width: auto;
     }
-}
-.nav-link{
-color: red;
-background-color: red;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 300px 100px;
-  grid-template-rows: 40px 100px;
 }
