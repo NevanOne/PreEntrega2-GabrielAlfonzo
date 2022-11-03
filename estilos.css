@@ -1,106 +1,202 @@
-body {
-   display: grid;
-   background-image: url(/img/background.jpg);
-   background-size: 100vw;
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Nunito+Sans&display=swap');
 
+body, html{
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ overflow: auto;
 }
-/* Agregar color a la barra de navegación */
-.topnav {
-    background-color: yellow;
-    overflow: hidden;
-  }
-  
-  /* Darle estilo a los links adentro de la barra de navegacion */
-  .topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Cambiar el color de los links en el hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Agregar color a los links activos/en hover */
-  .topnav a.active {
-    background-color: tomato;
-    color: white;
-  }
-  .footnav {
-    background-color: yellow;
-    overflow: hidden;
-    left: 0;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-  }
+/* Imagen de fondo */
 
-  .footnav a {
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    padding: 14px 16px;
-  }
-  .footnav :hover{
-    background-color: tomato;
-    color: white;
-  }
-  .fotoinicio{ 
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-block: 10%;
-    width: 50%;
-    border-style: groove;
-    border-color: red;
-    }
+ .background-image{
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;       
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100vh;
+  width:100vw; 
+}
 
-  .toptext{
-    color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    
-  }
-   h4{ 
-    color: white;
-    text-align: center;
-  }
-  .allvalleytxt :visited{
-    text-decoration: none;
-    color: none;
-  }
-  .tabla{
-    border-style: double;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  th{
-    border-style: double;
-    color: white;
-  }
-  tr{
-    border-style: double;
-    color: white;
-  }
-  td{
-   border-style: double;
-   color: white;
-  }
-  .maplocation{
+/* Nuestros Senseis - Inicio */
+ .foto--inicio{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 90px;
-  }
+  width: 50%;
+  height: 50%;
+  max-width: 100%;
+  background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 6px) no-repeat,
+              linear-gradient(90deg, #fe0000 0%, #d2e048 100%);
+  border-radius: 0px;
+  padding: 3px;
+  box-sizing: border-box;
+ }
+ 
+  
+ .btn-warning:hover{
+  background-color: #bfa252;
+ }
+ .parrafo1{
+  color: whitesmoke;
+  font-weight: 900;
+  background-color: #000;
+ }
 
+ .boxesContainer{
+  display: flex;
+  justify-content: center;
+ }
+ .card--text1 , .card--text2{
+  color: whitesmoke;
+  font-weight: 900;
+  
+ }
+
+.cardBox {
+
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 20%;
+}
+
+.cardBox:hover .card {
+  transform: rotateY( 180deg);
+}
+
+.card {
+  background-color: #222;
+  background-image: url(./img/Cobrakaibanner2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: default;
+  border-radius: 5px;
+  height: 500px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+
+.card p {
+  margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+}
+
+.card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.card .back {
+  transform: rotateY( 180deg);
+  border-radius: 5px;
+
+}
+
+.card .back a {
+  padding: 0.3em 0.5em;
+  background: #bfa252;
+  color: #333;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+  background: red;
+  color: #333;
+  text-shadow: 0 0 1px #333;
+}
+
+.cardBox:nth-child(1) .card .back {
+  background-image: url(./img/senseilawrence.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cardBox:nth-child(2) .card .back {
+  background-image: url(./img/senseikreese2.jpg);
+  background-repeat: no-repeat;
+  background-position: auto;
+  background-size: cover;
+}
+
+
+.cardBox:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+@media screen and (max-width: 767px) {
+
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    height: 385px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
+  }
+}
+
+  
 /* Apartado de la pagina de Contacto */
 .bigbox{
   padding-top: 10rem;
@@ -118,33 +214,11 @@ body {
     color: white;
 }
 
-.card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-}
-
-.price{
-    color: grey;
-    font-size: 22px;
-}
-.card button{
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor:pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
 .navbar-brand:hover , nav-item:hover , a.nav-link:hover , nav-item:hover{
   background-color: #bfa252;
 }
+
+/* Productos */
 
 
 /* Apartado de animacion de productos */
@@ -167,7 +241,7 @@ transform: scale(1,1) translate(0px, 0px);
 }
 }
 
-/* Gradiente Texto Top */
+/* Texto Top */
 
 .btn-primary {
 -webkit-animation: bounce 1s infinite;
@@ -176,38 +250,17 @@ transform: scale(1,1) translate(0px, 0px);
 .toptext{
   -webkit-animation: bounce 0.75s infinite;
   color: red;
-}
+  font-family: 'Nabla', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
 
 .ub-ubicaciontexto{
   display: flex;
   color: red;
   justify-content: center;
   -webkit-animation: bounce 1s infinite;
-}
+  }
 
 /* Responsive */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
 
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
