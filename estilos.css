@@ -155,6 +155,7 @@ body, html{
   animation: giro 1.5s 1;
 }
 
+
 @-webkit-keyframes giro {
   from {
     transform: rotateY( 180deg);
