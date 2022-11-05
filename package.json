@@ -9,7 +9,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NevanOne/PreEntrega2-GabrielAlfonzo.git"
-    "build-css" : "node-sass --include-path scss scss/prueba.scss css/prueba.css"
+    "build-css", : "node-sass --include-path scss scss/prueba.scss css/prueba.css"
   },
   "watch-css" "nodemon -e scss -x \"npm run build-css"
   "keywords": [
