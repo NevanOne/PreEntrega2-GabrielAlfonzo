@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*# sourceMappingURL=prueba.css.map */
 @import url("https://fonts.googleapis.com/css2?family=Nabla&family=Nunito+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Roboto:wght@300;400;500;700;900&display=swap");
@@ -189,26 +190,7 @@ html {
     height: 260px;
   }
 }
-/* Apartado de la pagina de Contacto */
-.bigbox {
-  padding-top: 10rem;
-  display: grid;
-  grid-template-rows: 0, 5fr;
-  place-content: center;
-}
-
-.firstname {
-  color: white;
-}
-
-.lastname {
-  color: white;
-}
-
-.correo {
-  color: white;
-}
-
+/* Hover NavBar */
 .navbar-brand:hover,
 nav-item:hover,
 a.nav-link:hover,
@@ -220,7 +202,7 @@ nav-item:hover {
 .footer-dark {
   padding: 50px 0;
   color: #f0f9ff;
-  background-color: #282d32;
+  background-color: #222;
 }
 
 .footer-dark h3 {
@@ -330,125 +312,176 @@ nav-item:hover {
   font-family: "Nabla", "Arial Narrow", Arial, sans-serif;
   text-align: center;
 }
-.toptext .ub-ubicaciontexto {
-  display: flex;
-  color: red;
-  justify-content: center;
-  -webkit-animation: bounce 1s infinite;
-}
 
 /* Productos */
-.wrapper {
-  height: 420px;
-  width: 654px;
-  margin: 50px auto;
-  border-radius: 7px 7px 7px 7px;
-  /* VIA CSS MATIC https://goo.gl/cIbnS */
-  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+.container--productos--cards {
+  display: flex;
 }
 
-.product-img {
-  float: left;
-  height: 420px;
-  width: 327px;
+.card--productos {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 20px;
+  margin: 0 20px;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
+  transition: 0.4s ease;
 }
 
-.product-img img {
-  border-radius: 7px 0 0 7px;
+.card--productos:hover {
+  transform: scale(1.05);
 }
 
-.product-info {
-  float: left;
-  height: 420px;
-  width: 327px;
-  border-radius: 0 7px 10px 7px;
-  background-color: #ffffff;
-}
-
-.product-text {
-  height: 300px;
-  width: 327px;
-}
-
-.product-text h1 {
-  margin: 0 0 0 38px;
-  padding-top: 52px;
-  font-size: 34px;
-  color: #474747;
-}
-
-.product-text h1,
-.product-price-btn p {
-  font-family: "Bentham", serif;
-}
-
-.product-text h2 {
-  margin: 0 0 47px 38px;
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #d2d2d2;
-  letter-spacing: 0.2em;
-}
-
-.product-text p {
-  height: 125px;
-  margin: 0 0 0 38px;
-  font-family: "Playfair Display", serif;
-  color: #8d8d8d;
-  line-height: 1.7em;
-  font-size: 15px;
-  font-weight: lighter;
-  overflow: hidden;
-}
-
-.product-price-btn {
-  height: 103px;
-  width: 327px;
-  margin-top: 17px;
+.card--productos .card-image {
   position: relative;
+  width: 280px;
+  height: 280px;
+  padding: 0 20px;
+  text-align: center;
+  background: #f4f7f8;
+  border-radius: 12px;
 }
 
-.product-price-btn p {
-  display: inline-block;
-  position: absolute;
-  top: -13px;
-  height: 50px;
-  font-family: "Trocchi", serif;
-  margin: 0 0 0 38px;
-  font-size: 28px;
-  font-weight: lighter;
-  color: #474747;
+.card--productos .card-image img {
+  width: 100%;
+  transition: 0.4s ease;
 }
 
-span {
-  display: inline-block;
-  height: 50px;
-  font-family: "Suranna", serif;
-  font-size: 34px;
+.card--productos:hover .card-image img {
+  transform: scale(1.02) rotate(-3deg) translateX(-5px);
 }
 
-.product-price-btn button {
-  float: right;
-  display: inline-block;
-  height: 50px;
-  width: 176px;
-  margin: 0 40px 0 16px;
-  box-sizing: border-box;
-  border: transparent;
-  border-radius: 60px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #ffffff;
-  background-color: #9cebd5;
+.card--productos .card-image .bx-star {
   cursor: pointer;
-  outline: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 10px;
+  font-size: 20px;
+  color: #f7ae04;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
 }
 
-.product-price-btn button:hover {
-  background-color: #79b0a1;
-}/*# sourceMappingURL=prueba.css.map */
+.card--productos .card-content h3 {
+  color: #222;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.card--productos .card-content p {
+  color: #555;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 8px 0 22px;
+  text-align: justify;
+}
+
+.card--productos .card-content button {
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #fabd14, #eb9616);
+}
+
+@media (max-width: 1280px) {
+  body {
+    height: unset;
+    padding: 0px;
+  }
+  .container--productos--cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container--productos--cards .card--productos {
+    margin: 20px;
+  }
+}
+/* Contacto */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Estilo al label para mostrarse cerca de los inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Estilo al boton de Enviar */
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Estilos al contenedor de formulario */
+.container--formulario {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Limpiar floats despues de las columnas*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - Cuando es menor a 600 px se transforma en 2 columnas, etc.. */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* Sección de Ubicación */
+.container-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Seccion de Galeria *//*# sourceMappingURL=prueba.css.map */

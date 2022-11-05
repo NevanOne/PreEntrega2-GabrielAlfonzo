@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sección de productos de la pagina de ventas de Cobra Kai Merchandise">
     <title>Cobra Kai Inicio</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,6 +16,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./scss/prueba.css" />
 </head>
 <header>
@@ -51,74 +53,110 @@
         <!-- Imagen de fondo-->
         <div class="background-image">
             <h1 class="toptext">Nuestros Productos</h1>
-            <div class="wrapper">
-                <div class="product-img">
-                  <img src="./img/producto1.jpg" height="420" width="327">
-                </div>
-                <div class="product-info">
-                  <div class="product-text">
-                    <h1>Gi´s de Cobra Kai</h1>
-                    <h2>Por y para Aprendices Reales</h2>
-                    <p>Los gi´s de Cobra Kai son importantes<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, aliquid.<br> Lorem, ipsum dolor.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus.<br>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="product-price-btn">
-                    <p><span>38</span>$</p>
-                    <button type="button">Compra Ahora</button>
-                  </div>
-                </div>
-              </div>
-              <div class="wrapper">
-                <div class="product-img">
-                  <img src="./img/producto2.jpg" height="420" width="327">
-                </div>
-                <div class="product-info">
-                  <div class="product-text">
-                    <h1>Remera de Cobra Kai</h1>
-                    <h2>Por y para Aprendices Reales</h2>
-                    <p>Estas remeras estan hechas con la tela mas fina de<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, aliquid.<br> Lorem, ipsum dolor.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus.<br>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="product-price-btn">
-                    <p><span>28</span>$</p>
-                    <button type="button">Compra Ahora</button>
-                  </div>
-                </div>
-              </div>
-            <!--Footer-->
-            <div class="footer-dark">
-                <footer>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6 col-md-3 item">
-                                <h3>Servicios</h3>
-                                <ul>
-                                    <li><a href="#">Entrenamiento de Disciplina</a></li>
-                                    <li><a href="#">Entrenamiento de Fuerza</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6 col-md-3 item">
-                                <h3>Acerca de</h3>
-                                <ul>
-                                    <li><a href="#">Compania</a></li>
-                                    <li><a href="#">Equipo</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6 item text">
-                                <h3>Cobra Kai</h3>
-                                <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut
-                                    vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit
-                                    pulvinar dictum vel in justo.</p>
-                            </div>
-                            <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a
-                                    href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i
-                                        class="icon ion-social-snapchat"></i></a><a href="#"><i
-                                        class="icon ion-social-instagram"></i></a></div>
-                        </div>
-                        <p class="copyright">Cobra Kai © 2022</p>
+            <div class="container--productos--cards">
+                <div class="card--productos">
+                    <div class="card-image">
+                        <img src="./img/producto1.jpg" alt="Gi´s de Cobra Kai">
+                        <i class="bx bx-star"></i>
                     </div>
-                </footer>
+                    <div class="card-content">
+                        <h3>Gi´s de Cobra Kai</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, odio?</p>
+                        <button class="add-to-cart">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card--productos">
+                    <div class="card-image">
+                        <img src="./img/producto2.jpg" alt="Remera de Cobra Kai">
+                        <i class="bx bx-star"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Remera de Cobra Kai</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, ipsa.</p>
+                        <button class="add-to-cart">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card--productos">
+                    <div class="card-image">
+                        <img src="./img/producto3.jpg" alt="Zapatilla de Cobra Kai">
+                        <i class="bx bx-star"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Zapatilla de Cobra Kai</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, ipsa.</p>
+                        <button class="add-to-cart">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card--productos">
+                    <div class="card-image">
+                        <img src="./img/producto4.jpg" alt="Barbijo de Cobra Kai">
+                        <i class="bx bx-star"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Barbijo de Cobra Kai</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, ipsa.</p>
+                        <button class="add-to-cart">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card--productos">
+                    <div class="card-image">
+                        <img src="./img/producto5.jpg" alt="Taza de Cobra Kai">
+                        <i class="bx bx-star"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Taza de Cobra Kai</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, ipsa.</p>
+                        <button class="add-to-cart">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+             </div>
+                <!--Footer-->
+                <div class="footer-dark">
+                    <footer>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3 item">
+                                    <h3>Servicios</h3>
+                                    <ul>
+                                        <li><a href="#">Entrenamiento de Disciplina</a></li>
+                                        <li><a href="#">Entrenamiento de Fuerza</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-md-3 item">
+                                    <h3>Acerca de</h3>
+                                    <ul>
+                                        <li><a href="#">Compania</a></li>
+                                        <li><a href="#">Equipo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 item text">
+                                    <h3>Cobra Kai</h3>
+                                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus.
+                                        Ut
+                                        vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget
+                                        velit
+                                        pulvinar dictum vel in justo.</p>
+                                </div>
+                                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a
+                                        href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i
+                                            class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                            class="icon ion-social-instagram"></i></a></div>
+                            </div>
+                            <p class="copyright">Cobra Kai © 2022</p>
+                        </div>
+                    </footer>
+                </div>
             </div>
-            </footer>
-        </div>
     </body>
 </main>
 </html>
