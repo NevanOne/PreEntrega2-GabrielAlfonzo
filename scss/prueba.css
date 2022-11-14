@@ -1,14 +1,15 @@
 @charset "UTF-8";
 /*# sourceMappingURL=prueba.css.map */
-@import url("https://fonts.googleapis.com/css2?family=Nabla&family=Nunito+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://acupoftee.github.io/fonts/Clip.ttf");
+/* Body */
 body,
 html {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow-x: hidden;
+  position: relative;
 }
 
 /* Imagen de fondo */
@@ -201,9 +202,13 @@ nav-item:hover {
 
 /* Footer */
 .footer-dark {
-  padding: 50px 0;
+  position: static;
+  padding: 40px 10px 10px;
   color: #f0f9ff;
   background-color: #222;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 .footer-dark h3 {
@@ -314,9 +319,15 @@ nav-item:hover {
   text-align: center;
 }
 
+.navbar {
+  width: 100%;
+}
+
 /* Productos */
 .container--productos--cards {
   display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .card--productos {
@@ -348,6 +359,7 @@ nav-item:hover {
 .card--productos .card-image img {
   width: 100%;
   transition: 0.4s ease;
+  overflow: hidden;
 }
 
 .card--productos:hover .card-image img {
@@ -439,14 +451,12 @@ input[type=submit] {
   padding: 20px;
 }
 
-/* Floating column for labels: 25% width */
 .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
 
-/* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
   width: 75%;
@@ -460,7 +470,7 @@ input[type=submit] {
   clear: both;
 }
 
-/* Responsive layout - Cuando es menor a 600 px se transforma en 2 columnas, etc.. */
+/* Responsive - Cuando es menor a 600 px se transforma en 2 columnas, etc.. */
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
@@ -543,195 +553,5 @@ input[type=submit] {
   100% {
     color: #ffe6ff;
     text-shadow: 0 0 0.6rem #ee4c4c, 0 0 1.5rem #f1d179, -0.2rem 0.1rem 1rem #bfa252, 0.2rem 0.1rem 1rem #8a753c, 0 -0.5rem 2rem #eb9616, 0 0.5rem 3rem #eb9616;
-  }
-}
-@-webkit-keyframes flicker {
-  from {
-    opacity: 1;
-  }
-  4% {
-    opacity: 0.9;
-  }
-  6% {
-    opacity: 0.85;
-  }
-  8% {
-    opacity: 0.95;
-  }
-  10% {
-    opacity: 0.9;
-  }
-  11% {
-    opacity: 0.922;
-  }
-  12% {
-    opacity: 0.9;
-  }
-  14% {
-    opacity: 0.95;
-  }
-  16% {
-    opacity: 0.98;
-  }
-  17% {
-    opacity: 0.9;
-  }
-  19% {
-    opacity: 0.93;
-  }
-  20% {
-    opacity: 0.99;
-  }
-  24% {
-    opacity: 1;
-  }
-  26% {
-    opacity: 0.94;
-  }
-  28% {
-    opacity: 0.98;
-  }
-  37% {
-    opacity: 0.93;
-  }
-  38% {
-    opacity: 0.5;
-  }
-  39% {
-    opacity: 0.96;
-  }
-  42% {
-    opacity: 1;
-  }
-  44% {
-    opacity: 0.97;
-  }
-  46% {
-    opacity: 0.94;
-  }
-  56% {
-    opacity: 0.9;
-  }
-  58% {
-    opacity: 0.9;
-  }
-  60% {
-    opacity: 0.99;
-  }
-  68% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 0.9;
-  }
-  72% {
-    opacity: 0.95;
-  }
-  93% {
-    opacity: 0.93;
-  }
-  95% {
-    opacity: 0.95;
-  }
-  97% {
-    opacity: 0.93;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes flicker {
-  from {
-    opacity: 1;
-  }
-  4% {
-    opacity: 0.9;
-  }
-  6% {
-    opacity: 0.85;
-  }
-  8% {
-    opacity: 0.95;
-  }
-  10% {
-    opacity: 0.9;
-  }
-  11% {
-    opacity: 0.922;
-  }
-  12% {
-    opacity: 0.9;
-  }
-  14% {
-    opacity: 0.95;
-  }
-  16% {
-    opacity: 0.98;
-  }
-  17% {
-    opacity: 0.9;
-  }
-  19% {
-    opacity: 0.93;
-  }
-  20% {
-    opacity: 0.99;
-  }
-  24% {
-    opacity: 1;
-  }
-  26% {
-    opacity: 0.94;
-  }
-  28% {
-    opacity: 0.98;
-  }
-  37% {
-    opacity: 0.93;
-  }
-  38% {
-    opacity: 0.5;
-  }
-  39% {
-    opacity: 0.96;
-  }
-  42% {
-    opacity: 1;
-  }
-  44% {
-    opacity: 0.97;
-  }
-  46% {
-    opacity: 0.94;
-  }
-  56% {
-    opacity: 0.9;
-  }
-  58% {
-    opacity: 0.9;
-  }
-  60% {
-    opacity: 0.99;
-  }
-  68% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 0.9;
-  }
-  72% {
-    opacity: 0.95;
-  }
-  93% {
-    opacity: 0.93;
-  }
-  95% {
-    opacity: 0.95;
-  }
-  97% {
-    opacity: 0.93;
-  }
-  to {
-    opacity: 1;
   }
 }/*# sourceMappingURL=prueba.css.map */
