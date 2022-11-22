@@ -323,11 +323,16 @@ nav-item:hover {
   width: 100%;
 }
 
+.nav-link, .nav-item {
+  font-weight: 950;
+}
+
 /* Productos */
 .container--productos--cards {
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
+  box-shadow: red;
 }
 
 .card--productos {
@@ -435,13 +440,19 @@ label {
 
 /* Estilo al boton de Enviar */
 input[type=submit] {
-  background-color: red;
-  color: white;
+  width: 100px;
+  background-color: #d2e048;
+  color: #333;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: right;
+  display: inline-block;
+  margin: auto;
+}
+
+input[type=submit]:hover {
+  background-color: #bfa252;
 }
 
 /* Estilos al contenedor de formulario */
