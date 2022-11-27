@@ -1,0 +1,43 @@
+@keyframes blink {
+    0%,
+      22%,
+      36%,
+      75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #f1d179, -0.2rem 0.1rem 1rem #bfa252, 0.2rem 0.1rem 1rem #8a753c, 0 -0.5rem 2rem #eb9616, 0 0.5rem 3rem #eb9616;
+    }
+  
+    28%,
+      33% {
+      color: #ff65bd;
+      text-shadow: none;
+    }
+  
+    82%,
+      97% {
+      color: #ff2483;
+      text-shadow: none;
+    }
+  }
+  
+  .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+  
+  .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+  
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ee4c4c, 0 0 1.5rem #f1d179, -0.2rem 0.1rem 1rem #bfa252, 0.2rem 0.1rem 1rem #8a753c, 0 -0.5rem 2rem #eb9616, 0 0.5rem 3rem #eb9616;
+    }
+  }
+
+  
