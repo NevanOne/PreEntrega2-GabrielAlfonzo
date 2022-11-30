@@ -436,6 +436,12 @@ nav-item:hover {
   font-weight: 950;
 }
 
+/* Estilo parrafo nd */
+.parrafonodisponible {
+  color: white;
+  text-align: center;
+}
+
 /* Contacto */
 input[type=text], select, textarea {
   width: 100%;
